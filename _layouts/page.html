@@ -1,0 +1,49 @@
+---
+layout: nil
+---
+<!doctype html>
+<html>
+
+<head>
+  <title>{{page.title}}</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{site.url}}/css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="{{site.url}}/css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="{{site.url}}/css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="{{site.url}}/css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="{{site.url}}/css/fonts.css" rel="stylesheet" type="text/css" />
+  <script src="{{site.url}}/js/jquery-3.3.1.min.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container">
+		<div class="menu">
+		  <div class="menu-table flex-row-space-between">
+			<div class="logo flex-row-center">
+			  <a href="index.html">Enquo</a>
+			</div>
+			<div class="menu-items flex-row-center flex-item">
+		<a href="{{site.url}}/index.html" class="menu-index">Overview</a>
+				<a href="{{site.url}}/faq" class="menu">FAQ</a>
+				<a href="{{site.url}}/how-it-works" class="menu">How It Works</a>
+			  <a href="https://github.com/enquo">GitHub</a>
+			  <a href="https://enquodb.com">Commercial Support</a>
+			</div>
+		  </div>
+		</div>
+  </div>
+  <div class="content-container">
+    <div class="content">
+{{content}}
+    </div>
+  </div>
+</body>
+
+</html>

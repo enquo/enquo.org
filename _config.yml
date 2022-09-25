@@ -1,0 +1,17 @@
+auto: false
+exclude:
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+
+url: //enquo.org
+
+archive_dir: blog
+
+# Don't publish future-dated posts
+future: false
+
