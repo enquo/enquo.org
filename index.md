@@ -1,5 +1,6 @@
 ---
 layout: page
+title: The Enquo Project
 ---
 Enquo, for "ENcrypted QUery Operations", is a project to build the ability to query *encrypted* data in popular database servers.
 

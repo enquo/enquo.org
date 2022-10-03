@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Enquo Project Frequently Asked Questions
 ---
 You've got questions?
 We've got answers (probably).
