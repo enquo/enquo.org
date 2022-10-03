@@ -35,3 +35,6 @@ Thus, features won't be shipped unless they're the very best developer experienc
 Ergonomic issues won't be worked around with warnings and caveats in documentation -- docs are never a substitute for good DX.
 
 Yes, this requires more up-front work, but the benefits are worth it, if it allows one more developer to secure the data they store.
+
+Another part of a good developer experience is having "batteries included".
+For Enquo, this means primarily that "optional" features that meet our security criteria are enabled by default.

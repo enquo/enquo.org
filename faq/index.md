@@ -40,7 +40,7 @@ The cost for an Enquo-enabled database is in disk space.
 Enquo-encrypted ciphertexts are significantly larger than just storing the plaintext value.
 This is because the [Order-Revealing Encryption](/how-it-works) that underlies a lot of how Enquo works unavoidably produces large ciphertexts.
 
-The exact overhead varies by data type, and is covered in the [data type documentation](/pg_enquo/types).
+The exact overhead varies by data type, and is covered in the [data type documentation](https://github.com/enquo/pg_enquo/tree/main/doc/data_types).
 
 
 # What Languages/ORMs Are Supported?

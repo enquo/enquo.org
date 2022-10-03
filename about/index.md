@@ -29,3 +29,5 @@ The tools that we build are secure, easy-to-use, *and* have acceptable real-worl
 * The [Enquo Project's philosophy](philosophy) may come in handy.
 
 * Our [threat modelling](threat-models) will be of interest to anyone who is developing for, or with, Enquo tools.
+
+* If you have a hankering for cryptographic minutiae, the [How Enquo Works](../how-it-works) page will satisfy your cravings.
