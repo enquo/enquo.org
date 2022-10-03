@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Enquo: How Does It Work?
+title: "Enquo: How Does It Work?"
 ---
 *This page is a work-in-progress.*
 
