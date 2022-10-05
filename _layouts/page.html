@@ -12,6 +12,9 @@ layout: nil
   <link href="{{site.url}}/css/custom.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="{{site.url}}/css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="{{site.url}}/css/fonts.css" rel="stylesheet" type="text/css" />
+  {% if page.banner %}
+  <link rel="stylesheet" type="text/css" href="/css/asciinema-player.css" />
+  {% endif %}
   <script src="{{site.url}}/js/jquery-3.3.1.min.js"></script>
   <style>
     .menu-index {
@@ -27,23 +30,80 @@ layout: nil
 		<div class="menu">
 		  <div class="menu-table flex-row-space-between">
 			<div class="logo flex-row-center">
-			  <a href="index.html">Enquo</a>
+				<a href="{{site.url}}">Enquo</a>
 			</div>
 			<div class="menu-items flex-row-center flex-item">
-				<a href="{{site.url}}/about" class="menu">About Enquo</a>
+				<a href="{{site.url}}/about" class="menu">About</a>
 				<a href="{{site.url}}/faq" class="menu">FAQ</a>
 				<a href="{{site.url}}/components" class="menu">Components</a>
-			  <a href="https://github.com/enquo">GitHub</a>
-			  <a href="https://enquodb.com">Commercial Support</a>
+			  <a href="https://github.com/enquo" class="menu">GitHub</a>
 			</div>
 		  </div>
 		</div>
   </div>
   <div class="content-container">
+    {% if page.banner %}
+      <div class="banner">
+        <div class="banner-table flex-column">
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="add-top-margin-small">Securely Search Your Sensitive Encrypted Data</h2>
+              <div id="rails-demo-asciinema"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
     <div class="content">
 {{content}}
     </div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row sitemap">
+          <div class="flex-item flex-column">
+            <h2>About Enquo</h2>
+			<ul>
+				<li><a href="{{site.url}}">Introduction</a></li>
+				<li><a href="{{site.url}}/about">About the Project</a></li>
+				<li><a href="{{site.url}}/about/philosophy">Project Philosophy</a></li>
+				<li><a href="{{site.url}}/components">Components</a></li>
+			</ul>
+          </div>
+          <div class="flex-item flex-column">
+			  <h2>Security</h2>
+			<ul>
+				<li><a href="{{site.url}}/threat-models">Threat Models</a></li>
+				<li><a href="{{site.url}}/how-it-works">Cryptography</a></li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+			</ul>
+          </div>
+          <div class="flex-item flex-column">
+			  <h2>Development</h2>
+			<ul>
+				<li><a href="{{site.url}}/contributing">Contributing</a></li>
+				<li><a href="https://github.com/enquo">GitHub</a></li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+			</ul>
+          </div>
+          <div class="flex-item flex-column">
+			  <h2>&nbsp;</h2>
+			<ul>
+				<li><a href="{{site.url}}/faq">FAQ</a></li>
+				<li><a href="mailto:contact@enquo.org">Contact</a></li>
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+			</ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+{% if page.banner %}
+<script src="/js/asciinema-player.min.js"></script>
+	<script>AsciinemaPlayer.create('/rails-demo.cast', document.getElementById('rails-demo-asciinema'), {loop: true, autoplay: true, cols: 100, rows: 30});</script>
+{% endif %}
 </body>
 
 </html>

@@ -18,7 +18,7 @@ The [`pg_enquo`](https://github.com/enquo/pg_enquo) extension, when loaded into 
 ## Contributing
 
 Support for other SQL and NoSQL database servers will come over time, as resources permit.
-If you would like to sponsor development of support for a new server, please contact [EnquoDB](https://enquodb.com).
+If you'd like to take on a challenge, see [our contributing notes](../contributing) for some hints on how to support Enquo in a database.
 
 
 # Enquo Clients
@@ -41,7 +41,7 @@ At present, Enquo has official support for the following languages:
 To maintain compatibility between Enquo-encrypted data between languages, all of the actual cryptography is implemented in Rust.
 Wrappers around this "core" code for other languages is then a relatively straightforward process.
 If you'd like to contribute an Enquo core implementation for a new language, grab a copy of [the enquo-core git repository](https://github.com/enquo/enquo-core) and have at it.
-If you're not Rust inclined yourself, but would like to sponsor an Enquo core client in a new language, please contact [EnquoDB](https://enquodb.com).
+If you're not Rust inclined yourself, but would like to sponsor the development of an Enquo core client in a new language, please contact [EnquoDB](https://enquodb.com).
 
 
 # ORMs
