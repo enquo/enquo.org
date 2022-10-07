@@ -38,7 +38,7 @@ In addition, we assume that an attacker is also able to be a *user* of the appli
 
 In the face of this scenario, Enquo in a default configuration is designed to be able to make the following guarantees.
 
-First off, an attacker should not be able to infer anything from the data other than the structure of the data and the presence or absence of data.
+First off, an attacker should not be able to infer anything from the data other than the structure of the data, the presence or absence of data, and in the case of variable-length data (like strings), the *approximate* size of the data (to the resolution of the encryption cipher's block size -- 16 bytes, for AES).
 
 For an SQL database, for example, "structure of the data" means the names of the tables and columns, and the type of data stored in each column.
 By "presence or absence", we mean that the attacker can see whether a value is NULL or not, and also determine how many rows there are in each table.
