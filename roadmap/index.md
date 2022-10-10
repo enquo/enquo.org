@@ -7,6 +7,7 @@ The future direction of the project is in the hands of its contributors.
 However, this list gives a sense of the things that are intended to be added to Enquo as time and resources permit.
 If you would like to sponsor development of any of these (or other) features, to ensure they appear sooner rather than later, please contact [EnquoDB](https://enquodb.com).
 
+
 # Key Rotation
 
 Being able to *change* a key in use, if it is suspected of compromise, is very important.
@@ -22,6 +23,13 @@ Each encrypted value identifies the key which was used to encrypt the data, so w
 While Enquo supports string *equality* queries (eg `WHERE first_name = 'Bob'`), it does not currently support substring matching operations (eg `WHERE first_name LIKE 'B%'`).
 This is a common pattern in applications, and is an important feature to support.
 We have a plan on how to do this; the limiting factor at the moment is the time to implement it.
+
+
+# Secure Key Management
+
+The security of Enquo-encrypted data (as with any cryptosystem) is only as good as the security of the keys.
+HSMs (Hardware Security Modules), secrets managers (such as HashiCorp Vault), and cloud-based key management services (such as AWS KMS, Google Cloud KMS, and Azure KeyVault), provide a higher level of assurance that key material is secure than just sticking it in an environment variable.
+The Enquo architecture has been designed with secure key management systems in mind, it's just a matter of writing the necessary code to support the various key management services out there.
 
 
 # Moah Data Types
