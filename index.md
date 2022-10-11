@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Enquo Project
-banner: true
+banner: rails-demo
 ---
 Enquo, for "ENcrypted QUery Operations", provides the ability to query *encrypted* data in popular database servers.
 

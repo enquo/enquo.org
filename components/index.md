@@ -20,6 +20,7 @@ The [`pg_enquo`](https://github.com/enquo/pg_enquo) extension, when loaded into 
 Support for other SQL and NoSQL database servers will come over time, as resources permit.
 If you'd like to take on a challenge, see [our contributing notes](../contributing) for some hints on how to support Enquo in a database.
 
+<a name="clients"></a>
 
 # Enquo Clients
 
